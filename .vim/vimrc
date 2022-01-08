@@ -1,0 +1,39 @@
+set hlsearch
+set incsearch
+
+" Manage tabs
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set fileformat=unix
+syntax on
+filetype plugin on
+
+" Fuzzy file search
+set path+=**
+set wildmenu
+
+set nocompatible
+
+set number relativenumber
+set cursorline
+
+" Remaps
+nnoremap <leader>b :buffers<cr>:b<space>
+nnoremap <leader>e :Lexplore<cr>
+
+" Style
+:hi clear CursorLineNR
+:hi CursorLineNR term=reverse ctermfg=Black ctermbg=Yellow guibg=Yellow
+:hi clear CursorLine
+:hi CursorLine term=reverse ctermbg=242 guibg=Grey40
+
+" netrw
+let g:netrw_banner = 0
+let g:netrw_hide = 1
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_liststyle = 4
+let g:netrw_winsize = 20
